@@ -25,5 +25,6 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.alert(" Your quiz score has been saved!! Click on Go Home and Check Your high scores!!");
+   // window.alert(" Your quiz score has been saved!! Click on Go Home and Check Your high scores!!");
+    window.location.assign("/Quizzer");
 };
